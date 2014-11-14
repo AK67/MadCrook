@@ -15,7 +15,7 @@ public class ProductDao implements ProductDaoInterface {
     private SessionFactory sessionFactory;
 	
 	
-	public void insert(product p) {
+	public void insert (product p) {
 		sessionFactory.getCurrentSession().save(p);
 		
 
