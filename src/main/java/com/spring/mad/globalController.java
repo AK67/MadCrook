@@ -20,7 +20,7 @@ public class globalController {
      
        @ModelAttribute("username")
 	   public String setLoggedInUser(Model model)
-	   { 
+	   {   log.debug(System.getProperty("java.class.path")); 
 		    log.debug("i am runnnnninnggggggggggg!!!!!!!!!!");
 		 
 		username =loggedInUserService.getusername();
