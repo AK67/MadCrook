@@ -1,3 +1,4 @@
+
 package com.hibernate.mad;
 
 import org.hibernate.validator.constraints.NotEmpty;

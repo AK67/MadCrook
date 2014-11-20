@@ -1,3 +1,12 @@
+ <!--                    Author : Anubhav Kaushik	
+                         file   : HeaderGlobal.jsp
+                         Description : 11/20/2014 Provides with the header of the page and provides the sttings menu to loggedInUser
+                                       Just pass the PageSubHeading parameter in your controller to display the subheading of the 
+                                       particular view.
+                         Instructions : Do not start html, head, body, container, row in the file that includes it. 
+ 
+ 
+ -->
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 pageEncoding="ISO-8859-1"%>
 <%@taglib  uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>

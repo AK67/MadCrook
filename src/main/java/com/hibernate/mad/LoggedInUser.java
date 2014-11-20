@@ -1,3 +1,11 @@
+/*         Author : ANUBHAV KAUSHIK
+ *         File : LoggeddInUser.java
+ *         Descirption: 
+ *         11/20/2014 : session level class to hold user info who  logged In.
+ *         
+ *         
+ */
+
 package com.hibernate.mad;
 
 import org.springframework.context.annotation.Scope;

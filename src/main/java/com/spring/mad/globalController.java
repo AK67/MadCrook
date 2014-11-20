@@ -1,3 +1,11 @@
+/*       Author : ANUBHAV KAUSHIK 
+ *       file   : global controller
+ *       description : * if                
+ * 
+ */
+
+
+
 package com.spring.mad;
 
 import org.apache.log4j.Logger;
@@ -20,8 +28,7 @@ public class globalController {
      
        @ModelAttribute("username")
 	   public String setLoggedInUser(Model model)
-	   {   log.debug(System.getProperty("java.class.path")); 
-		    log.debug("i am runnnnninnggggggggggg!!!!!!!!!!");
+	   {   log.debug("globalController");
 		 
 		username =loggedInUserService.getusername();
 		

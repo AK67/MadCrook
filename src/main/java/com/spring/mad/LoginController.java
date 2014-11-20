@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.hibernate.mad.LoginUser;
-import com.hibernate.mad.NewLoginUser;
 import com.services.LoggedInUserservice;
 import com.services.UserService;
 
