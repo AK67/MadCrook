@@ -11,9 +11,9 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.hibernate.mad.Post;
 import com.hibernate.mad.User;
-import com.hibernate.mad.product;
-import com.services.LoggedInUserservice;
+import com.services.PostService;
 import com.services.UserService;
 
 @Controller
@@ -25,22 +25,21 @@ public class AppUserController {
 	@Autowired
 	private UserService userService;
 	
-	
 	 
 ////////////////////////post request for new user////////////////////////////////////
 	@RequestMapping(value="/new",method = RequestMethod.POST)
 	   public String addUser(@Valid User user,BindingResult result,ModelMap modelMap)
-	   {
-		if (result.hasErrors()) {
-			return "newUser";
-		} else {	 
-		    userService.addUser(user);
-			return "userCreated";
-		}
+	   {	
+			if (result.hasErrors()) {
+				return "newUser";
+			} else {	 
+			    userService.addUser(user);
+				return "userCreated";
+			}	
 	   } 
 	   
 
-	 /////////////////////// Get Request for new user /////////////////////////
+/////////////////////// Get Request for new user /////////////////////////
 	@RequestMapping(value="/new",method = RequestMethod.GET)
 	   public String newUser(Model model)
 	   {

@@ -24,6 +24,8 @@ public class welcomeController {
 				model.addAttribute("loggedInUser", username);
 				model.addAttribute("pageSubHeading", "Your Space");
 				return "welcomeUser";
+				
+				
 	 }
 		
 	     

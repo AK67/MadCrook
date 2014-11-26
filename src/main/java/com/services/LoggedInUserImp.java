@@ -13,17 +13,9 @@ public class LoggedInUserImp implements LoggedInUserservice {
 
 	public String getusername() {
 	 return loggedInUser.getUsername();
-
 	}
 
-	public void setUsername(String username) {
-		
+	public void setUsername(String username) {		
 		loggedInUser.setUsername(username);
 	}
-
-
-	
-	
-	
-
 }

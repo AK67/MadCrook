@@ -1,7 +1,9 @@
 /*       Author : ANUBHAV KAUSHIK 
- *       file   : global controller
- *       description : * if                
- * 
+ *       file   : globalController.java
+ *       description : 11/20/2014 controlleradvice  is typically used to define @ExceptionHandler, @InitBinder, 
+ *                      @ModelAttribute methods that apply to all @RequestMapping methods. In This case it is
+ *                      'username'
+ *    
  */
 
 

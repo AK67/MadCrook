@@ -39,7 +39,7 @@ http://www.springframework.org/schema/mvc
         <property name="DataSource" ref="myDataSource" />
         <property name="annotatedClasses">
             <list>
-                <value>com.hibernate.mad.product</value>                
+                <value>com.hibernate.mad.Post</value>                
                 <value>com.hibernate.mad.User</value>
             </list>
         </property>
@@ -48,8 +48,9 @@ http://www.springframework.org/schema/mvc
                 <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect
                 </prop>
                 <prop key="hibernate.show_sql">true</prop>
-            </props>
+            </props>            
         </property>
+         
     </bean>
      
     <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
