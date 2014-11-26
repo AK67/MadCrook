@@ -7,9 +7,9 @@ import com.hibernate.mad.LoggedInUser;
 
 public interface LoggedInUserservice   {
 	    
-	    String getusername();
+	    String getusername();	  
+	    void setUsername (String username);
+	    long getUserId();
+	    void serUserId(long id);
 	    
-	 void setUsername (String username);
-	
-	
 }

@@ -1,4 +1,11 @@
-
+                              /*
+                               *  Author : Anubhav Kaushik	
+                               *  File : LoginUser.java 
+                               *  Description: this is just for defining validation while login ,this is not actually 
+                               *  have any entry to database
+                               */
+                            		
+    
 package com.hibernate.mad;
 
 import org.hibernate.validator.constraints.NotEmpty;

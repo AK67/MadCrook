@@ -20,4 +20,8 @@ public class UserServiceImp implements UserService{
 		public boolean validate(String username, String password) {
 			return userDao.validate(username,password);
 		}
+		public User getUserbyId(long id) {
+			return userDao.getUserById(id);
+			
+		}
 }

@@ -29,6 +29,16 @@ public class UserDao {
 		
 		sessionFactory.getCurrentSession().save(user);
 	}
+	
+	public User getUserById(long id)
+	{   log.debug("getting user having id :::" + id);	
+	    Session session = sessionFactory.getCurrentSession();
+		String hql = " FROM User  WHERE iduser = '"+id+"'";
+		Query query = session.createQuery(hql);
+		List<User> results = query.list();
+		User user = results.get(0);
+		return user;		
+	}
 	public boolean validate(String username, String password) {
 		log.debug("validate on user login called");
 		
@@ -40,10 +50,11 @@ public class UserDao {
 		String d_password = user.getPassword();
 		log.debug("password from database is" + d_password);
 		if (password.equals(d_password))
-		{// nlm.provideLogedinUser().setTestunit("berzerk");
-		loggedInUserService.setUsername("jack");
-		log.debug("set username is "+loggedInUserService.getusername());
-		 return true;
+		{
+				loggedInUserService.setUsername("jack");
+				loggedInUserService.serUserId(user.getIduser());
+				log.debug("set username is "+loggedInUserService.getusername());
+			    return true;
 		}
 		else
 		{

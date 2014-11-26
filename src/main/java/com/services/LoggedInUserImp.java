@@ -18,4 +18,17 @@ public class LoggedInUserImp implements LoggedInUserservice {
 	public void setUsername(String username) {		
 		loggedInUser.setUsername(username);
 	}
+
+	public long getUserId() {
+		return loggedInUser.getId();
+	}
+
+	public void serUserId(long id) {
+		loggedInUser.setId(id);
+		
+	}
+
+	
+	
+	
 }

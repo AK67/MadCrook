@@ -16,6 +16,14 @@ import org.springframework.context.annotation.ScopedProxyMode;
 public class LoggedInUser {
 	
 	String username;
+    long Id ;
+	public long getId() {
+		return Id;
+	}
+
+	public void setId(long id) {
+		Id = id;
+	}
 
 	public String getUsername() {
 		return username;
