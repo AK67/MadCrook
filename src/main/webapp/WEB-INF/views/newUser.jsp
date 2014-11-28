@@ -15,26 +15,35 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-
-</head>
-
+<script type="text/javascript" src ='../resc/js/landingPage.js'></script>
+<link rel="stylesheet" href ='../resc/css/landingPage.css'></script>
 <body>
-
-	<div class="page-header">
-	  <h1>crear nuevo User </h1>
+<div class='container'>
+     <div class="page-heading">
+     <h1>  <span style="color:white">JASON</span> </h1>
+     </div>
+     <div class="jumbotron">
+	  <h1>Hello, world!</h1>
+	  <p>...</p>
+	  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
 	</div>
-
-	<form:form commandName="user" method="post"  action="" role="form" >
-		<div align=center>  Nombre/naame: <form:input class="form-control"  path="username"/> </br>  <form:errors path="username" cssClass="alert alert-warning" /> </div>
-		 </br>
-		<div align=center> password: <form:input class="form-control" path="password"/> </br>  <form:errors path="password" cssClass="alert alert-warning" /> </div>
-		 </br>
-		<div align=center> <input class="btn btn-default" type="submit"/> </div>
-	</form:form>
-
-     <br>
- 
-    <div align=center> <a href="/../MadCrook/product.htm" >Show/mostrar/dhrashyati All/sarve/todos Products</a> </div>
-  
+     <div class='row'>
+        <div class='col-md-4'> </div>
+        <div class='col-md-4'>
+			<form:form commandName="user" method="post"  action="" role="form" >
+				<div align=center>  Nombre/naame: <form:input class="form-control"  path="username"/> </br>  <form:errors path="username" cssClass="alert alert-warning" /> </div>
+				 </br>
+				<div align=center> password: <form:input class="form-control" path="password"/> </br>  <form:errors path="password" cssClass="alert alert-warning" /> </div>
+				 </br>
+				<div align=center> <input class="btn btn-default" type="submit"/> </div>
+			</form:form>
+		</div>   
+		     <br>
+		  <div class='col-md-4'> </div>
+        </div>
+		    <div align=center> <a href="/../MadCrook/product.htm" >Show/mostrar/dhrashyati All/sarve/todos Products</a> </div>
+		
+   
+  </div>
 </body>
 </html>

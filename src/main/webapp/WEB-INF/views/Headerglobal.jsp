@@ -18,7 +18,7 @@ pageEncoding="ISO-8859-1"%>
 	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
 
-<link href="/css/custom.css " rel="stylesheet">
+<link href="resc/css/globalHeader.css" rel="stylesheet">
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -28,27 +28,34 @@ pageEncoding="ISO-8859-1"%>
 </head>
 <body>
 
-		<div class="custom-page-header" ><h1>JASON</h1> 
-			  <small > ${pageSubHeading}</small>
-			  
-			<c:if test="${username != null}" >  
-			<div style="float:right; margin-right: 4%;" >
-			 <small >  ${username}</small>
-			 <div class="btn-group" >
-				  <div class="btn-group">
-				    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-				        <span class='glyphicon glyphicon-off'></span>
-			
-				    </button>
-				    <ul class="dropdown-menu" role="menu" >
-				      <li><a href="/MadCrook/login/logout.htm">logout</a></li>
-				      <li><a href="#">settings</a></li>
-				    </ul>
-				  </div>
-			</div>
-			</div>
-		     </c:if>  
-		      
-		 </div>
+		<table width="100%">
+			<tr >
+			  <td width="90%">
+		 		 <h1>JASON</h1> 
+		    	 <small > ${pageSubHeading}</small>
+		 	 </td>
+		 	 <td width="10%">	 	  
+					<c:if test="${username != null}" >  
+					<div >
+						 <small >  ${username}</small>
+						 <div class="btn-group"  >
+							  <div class="btn-group">
+								    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+								        <span class='glyphicon glyphicon-off'></span>
+							
+								    </button>
+								    <ul class="dropdown-menu" role="menu" >
+								      <li><a href="/MadCrook/login/logout.htm">logout</a></li>
+								      <li><a href="#">settings</a></li>
+								    </ul>
+							  </div>
+						</div>
+					</div>
+				     </c:if>
+			  </td>   
+		     <tr> 
+		 </table>     
+		     
+		
 <div class="container">
 <div class="row"> 

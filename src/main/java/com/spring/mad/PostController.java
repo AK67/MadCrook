@@ -1,5 +1,7 @@
 package com.spring.mad;
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.apache.log4j.Logger;
@@ -53,4 +55,16 @@ public class PostController {
 		return "newPost";
 	
 	}
+	/////////////////////////show post of a user by id ///////////////////////
+	@RequestMapping(value="/show",method = RequestMethod.GET)
+	public String showPosts(Model model)
+	{   
+		long loggedInUserId = loggedInUserService.getUserId();
+		List<Post> posts = postservice.getPostsByUserId(loggedInUserId);
+		model.addAttribute("posts", posts);
+		model.addAttribute("pageSubHeading", "POSTS");
+		return "showPosts";
+	
+	}
+	
 }

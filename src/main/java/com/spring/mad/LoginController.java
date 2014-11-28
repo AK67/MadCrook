@@ -89,5 +89,10 @@ public class LoginController {
 		 return "hello";
 		}
 	 
-	 
+	 @RequestMapping("/ni")
+		public String land(Model model,HttpServletRequest request)
+		{    
+		
+		 return "landingPage";
+		}
 }

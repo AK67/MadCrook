@@ -40,7 +40,7 @@ public class User {
 	 String password;
      
      @OneToMany(mappedBy = "user")  
-     private Set<Post> posts;  
+     private List<Post> posts;  
      
      /////////////////////////////////////// GETTER SETTERS //////////////////////////////////////
      
@@ -62,10 +62,10 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-    public Set<Post> getPosts() {
+    public List<Post>  getPosts() {
 		return posts;
 	}
-	public void setPosts(Set<Post> posts) {
+	public void setPosts(List<Post> posts) {
 		this.posts = posts;
 	}
 	
